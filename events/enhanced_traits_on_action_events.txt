@@ -1,0 +1,665 @@
+namespace = enhancedtraits
+###########################
+# Utopia On-Action Events #
+###########################
+
+
+# Assign strategist trait to every admiral
+country_event = {
+	id = enhancedtraits.1
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			
+			OR = {
+				species = { has_trait = trait_strategist}
+				species = { has_trait = trait_robot_strategist}
+			}			 
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_strategist
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_strategist
+				break = yes
+			}
+		
+		}
+	}
+}
+
+
+# Assign strategist2 trait to every admiral
+country_event = {
+	id = enhancedtraits.2
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		OR = {
+				species = { has_trait = trait_strategist2}
+				species = { has_trait = trait_robot_strategist2}
+			}	
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_strategist2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_strategist2
+				break = yes
+			}
+
+		}
+	}
+}
+# Assign strategist3 trait to every admiral
+country_event = {
+	id = enhancedtraits.3
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	OR = {
+				species = { has_trait = trait_strategist3}
+				species = { has_trait = trait_robot_strategist3}
+			}	
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_strategist3
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_strategist3
+				break = yes
+			}
+		}
+	}
+}
+# Assign strategist4 trait to every admiral
+country_event = {
+	id = enhancedtraits.4
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			OR = {
+				species = { has_trait = trait_strategist4}
+				species = { has_trait = trait_robot_strategist4}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_strategist4
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_strategist4
+				break = yes
+			}
+		}
+	}
+}
+# Assign nonstrategist trait to every admiral
+country_event = {
+	id = enhancedtraits.5
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nonstrategist}
+				species = { has_trait = trait_robot_nonstrategist}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nonstrategist
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nonstrategist
+				break = yes
+			}
+		}
+	}
+}
+# Assign nonstrategist2 trait to every admiral
+country_event = {
+	id = enhancedtraits.6
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nonstrategist2}
+				species = { has_trait = trait_robot_nonstrategist2}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nonstrategist2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nonstrategist2
+				break = yes
+			}
+		}
+	}
+}
+# Assign nonstrategist3 trait to every admiral
+country_event = {
+	id = enhancedtraits.7
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nonstrategist3}
+				species = { has_trait = trait_robot_nonstrategist3}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nonstrategist3
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nonstrategist3
+				break = yes
+			}
+		}
+	}
+}
+# Assign nonstrategist4 trait to every admiral
+country_event = {
+	id = enhancedtraits.8
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nonstrategist4}
+				species = { has_trait = trait_robot_nonstrategist4}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nonstrategist4
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nonstrategist4
+				break = yes
+			}
+		}
+	}
+}
+# Assign tactician trait to every admiral
+country_event = {
+	id = enhancedtraits.9
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			
+			OR = {
+				species = { has_trait = trait_tactician}
+				species = { has_trait = trait_robot_tactician}
+			}			 
+						
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_tactician
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_tactician
+				break = yes
+			}
+		}
+	}
+}
+# Assign tactician2 trait to every admiral
+country_event = {
+	id = enhancedtraits.10
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		OR = {
+				species = { has_trait = trait_tactician2}
+				species = { has_trait = trait_robot_tactician2}
+			}	
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_tactician2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_tactician2
+				break = yes
+			}
+		}
+	}
+}
+# Assign tactician3 trait to every admiral
+country_event = {
+	id = enhancedtraits.11
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+			OR = {
+				species = { has_trait = trait_tactician3}
+				species = { has_trait = trait_robot_tactician3}
+			}	
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_tactician3
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_tactician3
+				break = yes
+			}
+		}
+	}
+}
+# Assign tactician4 trait to every admiral
+country_event = {
+	id = enhancedtraits.12
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			OR = {
+				species = { has_trait = trait_tactician4}
+				species = { has_trait = trait_robot_tactician4}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_tactician4
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_tactician4
+				break = yes
+			}
+		}
+	}
+}
+# Assign nontactician trait to every admiral
+country_event = {
+	id = enhancedtraits.13
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nontactician}
+				species = { has_trait = trait_robot_nontactician}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nontactician
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nontactician
+				break = yes
+			}
+		}
+	}
+}
+# Assign nontactician2 trait to every admiral
+country_event = {
+	id = enhancedtraits.14
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nontactician2}
+				species = { has_trait = trait_robot_nontactician2}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nontactician2
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nontactician2
+				break = yes
+			}
+		}
+	}
+}
+# Assign nontactician3 trait to every admiral
+country_event = {
+	id = enhancedtraits.15
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nontactician3}
+				species = { has_trait = trait_robot_nontactician3}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nontactician3
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nontactician3
+				break = yes
+			}
+		}
+	}
+}
+# Assign nontactician4 trait to every admiral
+country_event = {
+	id = enhancedtraits.16
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nontactician4}
+				species = { has_trait = trait_robot_nontactician4}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = admiral }
+				add_trait = leader_trait_nontactician4
+				break = yes
+			}
+			if = {
+				limit = { leader_class = general }
+				add_trait = leader_trait_general_nontactician4
+				break = yes
+			}
+		}
+	}
+}
+# Assign governors trait to every admiral
+country_event = {
+	id = enhancedtraits.17
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			
+			OR = {
+				species = { has_trait = trait_governors}
+				species = { has_trait = trait_robot_governors}
+			}			 
+						
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor  }
+				add_trait = leader_trait_governors
+				break = yes
+			}
+		
+		}
+	}
+}
+# Assign governors2 trait to every admiral
+country_event = {
+	id = enhancedtraits.18
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		OR = {
+				species = { has_trait = trait_governors2}
+				species = { has_trait = trait_robot_governors2}
+			}	
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor  }
+				add_trait = leader_trait_governors2
+				break = yes
+			}
+
+		}
+	}
+}
+# Assign governors3 trait to every admiral
+country_event = {
+	id = enhancedtraits.19
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	OR = {
+				species = { has_trait = trait_governors3}
+				species = { has_trait = trait_robot_governors3}
+			}	
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor  }
+				add_trait = leader_trait_governors3
+				break = yes
+			}
+		}
+	}
+}
+# Assign governors4 trait to every admiral
+country_event = {
+	id = enhancedtraits.20
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			OR = {
+				species = { has_trait = trait_governors4}
+				species = { has_trait = trait_robot_governors4}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor  }
+				add_trait = leader_trait_governors4
+				break = yes
+			}
+		}
+	}
+}
+# Assign nongovernors trait to every admiral
+country_event = {
+	id = enhancedtraits.21
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nongovernors}
+				species = { has_trait = trait_robot_nongovernors}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor  }
+				add_trait = leader_trait_nongovernors
+				break = yes
+			}
+		
+		}
+	}
+}
+# Assign nongovernors2 trait to every admiral
+country_event = {
+	id = enhancedtraits.22
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nongovernors2}
+				species = { has_trait = trait_robot_nongovernors2}
+			}	
+			}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor  }
+				add_trait = leader_trait_nongovernors2
+				break = yes
+			}
+		
+		}
+	}
+}
+# Assign nongovernors3 trait to every admiral
+country_event = {
+	id = enhancedtraits.23
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nongovernors3}
+				species = { has_trait = trait_robot_nongovernors3}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor }
+				add_trait = leader_trait_nongovernors3
+				break = yes
+			}
+		
+		}
+	}
+}
+# Assign nongovernors4 trait to every admiral
+country_event = {
+	id = enhancedtraits.24
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from {
+		OR = {
+				species = { has_trait = trait_nongovernors4}
+				species = { has_trait = trait_robot_nongovernors4}
+			}	
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = { leader_class = governor  }
+				add_trait = leader_trait_nongovernors4
+				break = yes
+			}
+		
+		}
+	}
+}
